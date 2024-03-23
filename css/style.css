@@ -1,0 +1,189 @@
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+
+/* Styles de base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#logo {
+  width: 150px;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+main {
+  padding: 10px;
+}
+
+.menu {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 30px 10px;
+  position: relative;
+  background-color: #333333;
+  box-shadow: inset 0 0 10px 2px black;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Pour une expérience de défilement plus fluide sur iOS */
+}
+
+.carousel-image {
+  flex: 0 0 auto;
+  width: 90%;
+  scroll-snap-align: start;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel button img {
+  width: 25px; /* Ajustez la taille des chevrons selon vos besoins */
+  height: auto;
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.prev {
+  left: -5px; /* Ajustez la position du bouton précédent selon vos besoins */
+}
+
+.next {
+  right: -5px; /* Ajustez la position du bouton suivant selon vos besoins */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styles spécifiques aux appareils de grande taille */
+@media screen and (min-width: 768px) {
+  header {
+    padding: 40px;
+  }
+
+  main {
+    padding: 40px;
+  }
+
+  .controls button {
+    padding: 15px 30px;
+  }
+
+  .carousel {
+    width: 600px;
+  }
+}
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+/* A better looking default horizontal rule */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* Remove the gap between certain elements and the bottom of their containers */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/* Remove default fieldset styles */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Allow only vertical resizing of textareas */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* Clearfix: contain floats */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* Hide visually and from screen readers */
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/* Hide only visually, but have it available for screen readers */
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Clearfix: contain floats */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+

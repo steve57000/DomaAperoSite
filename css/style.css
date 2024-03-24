@@ -49,6 +49,7 @@ main {
   flex: 0 0 auto;
   width: 90%;
   scroll-snap-align: start;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.82);
 }
 
 .carousel button {
@@ -65,14 +66,15 @@ main {
   width: 25px; /* Ajustez la taille des chevrons selon vos besoins */
   height: auto;
   filter: drop-shadow(0 0 0.75rem crimson);
+
 }
 
 .prev {
-  left: -5px; /* Ajustez la position du bouton précédent selon vos besoins */
+  left: 0; /* Ajustez la position du bouton précédent selon vos besoins */
 }
 
 .next {
-  right: -5px; /* Ajustez la position du bouton suivant selon vos besoins */
+  right: 0; /* Ajustez la position du bouton suivant selon vos besoins */
 }
 
 footer {
@@ -90,10 +92,6 @@ footer {
 
   main {
     padding: 40px;
-  }
-
-  .controls button {
-    padding: 15px 30px;
   }
 
   .carousel {
